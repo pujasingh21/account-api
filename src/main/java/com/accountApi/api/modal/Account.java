@@ -1,5 +1,6 @@
 package com.accountApi.api.modal;
 
+//TODO Unused imports are here, please remove
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,23 +10,29 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+/*
+TODO Format this class, remove unwanted line breaks. Another thing in this whole class you are using primitives use Objects instead.
+ And also let me know why object but not primitives
+*/
 @Entity
 @Table(name="Account")
 public class Account {
-	
+
+	//TODO Please rename this id add accountId
 	@Id	
 	@GeneratedValue
 	private int id;
-	
+
+	//TODO Please use camelCasing here example accountNumber
 	@NotNull
 	//@Size(min=3, max=5, message="Please enter valid account number")
 	private int account_number;
-	
 
-		
+
+	//TODO Please use camelCasing here example accountNumber
 	private int customer_id;
-	
-	
+
+	//TODO Spelling mistake
 	@NotNull(message="{Account.customer_id.null}")
 	private int balane;
 	

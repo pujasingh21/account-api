@@ -15,10 +15,12 @@ import com.accountApi.api.exception.AccountNotFoundException;
 @Service
 public class AccountServices {
 
+	//TODO Class names never be in camelCasing, please fix this. Also give proper name to reference, repo is not good name.
 	@Autowired
 	private accountRepository repo;
 
 	public Account saveAccountDetails(Account account) {
+		//TODO Same mistake like in Customer, why you need to create Account object? Another can you give better name to accountInfo
 		Account accountInfo = new Account();
 		try {
 			accountInfo = repo.save(account);
@@ -35,6 +37,7 @@ public class AccountServices {
 
 	
 	public List<Account> fetchAccountDetails() {
+		//TODO Why you need to create List object? Another can you give better name to accountsDetails
 		List<Account> accountsDetails = new ArrayList<Account>();
 		try {
 			accountsDetails=repo.findAll();
@@ -51,6 +54,7 @@ public class AccountServices {
 
 	
 	public Account fetchAccountDetails(int id) {
+		//TODO Same mistake like in Customer, why you need to create Account object? Another can you give better name to accountsDetails
 		Account accountDetails = new Account();
 		try {
 			accountDetails = repo.findById(id).orElseThrow(null);
@@ -67,6 +71,7 @@ public class AccountServices {
 
 	
 	public Account updateAccount(Account account) {
+		//TODO Same mistake like in Customer, why you need to create Account object? Another can you give better name to accountInfo
 		Account accountInfo = new Account();
 		try {
 			accountInfo = repo.save(account);
