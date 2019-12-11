@@ -1,4 +1,4 @@
-package com.accountApi.api.exception;
+package com.account.api.exception;
 
 import java.util.Date;
 

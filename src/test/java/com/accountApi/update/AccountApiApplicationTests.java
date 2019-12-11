@@ -4,10 +4,10 @@ package com.accountApi.update;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class AccountApiApplicationTests {
 
-	@Test
+	//@Test
 	void contextLoads() {
 	}
 

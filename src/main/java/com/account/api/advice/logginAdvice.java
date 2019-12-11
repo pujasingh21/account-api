@@ -1,4 +1,4 @@
-package com.accountApi.api.advice;
+package com.account.api.advice;
     
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

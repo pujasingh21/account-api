@@ -1,8 +1,7 @@
-package com.accountApi.api.exception;
+package com.account.api.exception;
 
 import java.util.Date;
 
-import org.hibernate.exception.JDBCConnectionException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
