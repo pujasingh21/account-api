@@ -22,7 +22,7 @@ public class Accountservices {
     public Account saveAccountDetails(Account accountData) {
         Account account = null;
         try {
-            account = repository.save(account);
+            account = repository.save(accountData);
         } catch (CannotCreateTransactionException e) {
             throw new DataBaseConnectionException("Database server connection failure ", e);
         } catch (AccountNotFoundException e) {
